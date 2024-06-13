@@ -1,0 +1,18 @@
+{
+  "name": "number-guessing-game",
+  "version": "1.0.0",
+  "description": "building a game in which program will generate random number and user will input a number to guess",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ali Jumani",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.19"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
