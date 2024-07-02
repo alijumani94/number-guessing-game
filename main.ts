@@ -1,4 +1,5 @@
 import inquirer from "inquirer"
+import chalk from "chalk"
 
 let condition= true;
 while(condition){
@@ -13,14 +14,14 @@ while(condition){
 console.log("The generated number is: "+number);
 
 if(answer.guessnumber === number){
-console.log("Congratulations! your guess number is right! ");
+console.log(chalk.bold.green("Congratulations! your guess number is right! "));
 }
 else if( number-answer.guessnumber==1 || answer.guessnumber-number==1){
-console.log("Nice try, you were too close.");
+console.log(chalk.bold.blue("Nice try, you were too close."));
 
 }
 else{
-    console.log("wrong guess, try again!")
+    console.log(chalk.bold.red("wrong guess, try again!"))
 }
 if(answer.guessnumber===number){
 condition=false
